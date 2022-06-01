@@ -1,0 +1,830 @@
+/* || Main settings */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *::after {
+    box-sizing: inherit;
+}
+
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+figure,
+figcaption {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+  }
+
+body {
+    font-family: Gilroy-Medium;
+    margin: 0 auto;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Gilroy-Bold;
+    font-size: 3em;
+}
+
+.right-arrow {
+    width: 50px;
+    height: 40px;
+}
+
+button {
+    font-size: 14px;
+    border: none;
+    padding: 1em 1.8em; 
+}
+
+
+/* || Header */
+/* || Navigation */
+
+.top-line {
+    font-size: 16px;
+    max-width: 1295px;
+    margin: 0 auto;
+}
+
+.top-line ul{
+    display: grid;
+    grid-template-columns: 2.6fr 2.6fr 2.6fr 4fr 1fr 1fr 1fr 1fr;
+}
+
+.top-line li {
+    display: grid;
+    border-right: 1px solid rgba(196, 196, 196, 1);
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.saloons img {
+    float: right;
+    margin-left: 1em;
+}
+
+.top-line__button button{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 134, 138, 1);
+    border: none;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 1em;
+}
+
+.logo {
+    border-left: 1px solid rgba(196, 196, 196, 1);
+}
+
+/* ||First-screen */
+/*|| Main menu */
+
+.first-screen {
+    background-color: rgba(79, 191, 165, 1);
+    color: white;
+}
+
+.first-screen nav {
+    font-size: 18px;
+}
+
+.main-menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-menu li {
+    display: flex;
+    padding: 1em 1.8em;
+    align-items: center;
+}
+
+.main-menu .reservation {
+    padding-left: 3.5em;
+}
+
+.main-menu button {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    border: none;
+    padding: .5em 1em;
+    cursor: pointer;
+}
+
+/* || Description */
+
+.description {
+    max-width: 1295px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.first-screen__desc {
+    max-width: 416px;
+}
+
+.slider{
+    display: flex;
+    position: relative;
+    max-width: 925px;
+}
+
+
+.arrows {
+    position: relative;
+    top: 440px;
+    left: -60px;
+}
+
+
+.prev, .next {
+    display: inline-block;
+    height: 50px;
+    width: 59px;
+    border: 1px solid white;
+    padding: 0 15px;
+}
+
+.next {
+    margin-left: -4.00006px;
+    border-left: none;
+}
+
+.first-screen h1 {
+    font-family: Gilroy-Bold;
+    margin-bottom: 1em;
+
+}
+
+.first-screen p {
+    font-size: 14px;
+    line-height: 150%;
+    padding-left: 0;
+}
+
+.details {
+    border: none;
+    background-color: rgba(0, 134, 138, 1);
+    color: white;
+    font-size: 18px;
+    padding: 15px 25px;
+    margin: 2.2em 0;
+    cursor: pointer;
+}
+
+/* || Main categories */
+
+.first-screen__main-categories {
+    font-size: 21px;
+}
+
+.first-screen__main-categories ul {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    max-width: 1295px;
+    margin: 0 auto;
+}
+
+.first-screen__main-categories li {
+    display: grid;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories li:nth-child(2n+1) {
+    background-color: rgba(0, 134, 138, 1);
+}
+
+
+
+/* || Main */
+
+/* || Innovations */
+main {
+    max-width: 1295px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    row-gap: 80px;   
+}
+
+.innovation {
+    background-color: rgba(0, 134, 138, 1);
+    color: white;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+main button {
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 9px 15px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+main .block {
+    padding: 2.5em;
+}
+
+.innovation button {
+    background-color: rgba(79, 191, 165, 1);
+}
+
+.innovation p {
+    padding-bottom: 1em;
+}
+
+.block a img {
+    float: left;
+    margin-right: 1em;
+}
+
+.block a p {
+    font-family: Gilroy-Bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* || Numbers */
+
+.numbers {
+    position: relative;
+    color: rgba(0, 0, 0, .5);
+    font-size: 14px;
+    margin-left: 5.8em;
+}
+
+.numbers button {
+    background-color: rgba(79, 191, 165, 1);
+}
+
+
+.big-number {
+    float: left;
+    font-size: 3.5em;
+    margin-right: .4em; 
+}
+
+.section::after, section::before {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.section:hover {
+    font-size: 200%;
+    color: black;
+    transition: 0.4s;
+}
+
+.section:hover .big-number {
+    color: rgba(0, 134, 138, 1);
+}
+
+.lisence {
+    max-width: 306px;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    z-index: -1;
+}
+
+/* || News */
+
+.news {
+    color: white;
+    background-color: rgba(79, 191, 165, 1);
+    font-size: 18px;
+    line-height: 1.5em;;
+}
+
+main .news .block {
+    padding: 0;
+}
+
+.news .block article {
+    padding: 2.5em;
+}
+
+.button-news {
+    background-color: rgba(0, 134, 138, 1);
+    margin: 40px
+}
+
+
+.news .block article:nth-of-type(1) {
+    background-color: rgba(0, 134, 138, 1);
+}
+
+/* || why */
+
+main .why {
+    color: black;
+    background-color:rgba(0, 134, 138, .1);
+    padding: 2em 3.7em;
+}
+
+.why h2 {
+    font-family: Gilroy-Bold;
+    font-size: 1.5em;
+    line-height: 150%;
+    padding-bottom: 1em;
+}
+
+.why ul {
+    list-style: square;
+    color: black;
+    font-size: 14px;
+    margin-left: 2em;
+}
+
+.why li {
+    line-height: 150%;
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+
+.why ul li::marker {
+    color: rgba(0, 134, 138, 1);
+    font-size: 1.5em;
+}
+
+/* Offers */
+
+.offers {
+    position: relative;
+    background-color: rgba(0, 134, 138, .1);
+    text-align:center;
+    max-height: 350px;
+}
+
+.rectangle {
+    display: flex;
+    max-width: 1295px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 306px;
+    height: 344px;
+    border: 1px solid grey;
+    position: relative;
+    text-align: start;
+    padding: 2em;
+    color: white;
+}
+
+.offers h1 {
+    color:rgba(0, 134, 138, 1);
+    padding: 1.6em 0 1em;
+}
+
+.one {
+    background: url("images/Rectangle\ 23.png") top no-repeat;
+    background-size: 306px;
+    background-color: rgba(0, 134, 138, 1);
+}
+
+.two {
+    background: url("images/Rectangle\ 23\(1\).png") top no-repeat;
+    background-size: 306px;
+    background-color: rgba(0, 134, 138, 1);
+}
+
+.three {
+    background: url("images/Rectangle\ 23\(2\).png") top no-repeat;
+    background-size: 306px;
+    background-color: rgba(0, 134, 138, 1);
+}
+
+.four {
+    background: url("images/Rectangle\ 23\(3\).png") top no-repeat;
+    background-size: 306px;
+    background-color: rgba(0, 134, 138, 1);
+}
+
+.offer button {
+    width: 148px;
+    height: 40px;
+    background-color: rgba(0, 134, 138, 1);
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: .5em .8em;
+    cursor: pointer;
+}
+
+.offer h2 {
+    font-family: Gilroy-Bold;
+    font-size: 21px;
+    margin: 0;
+}
+
+.base {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* || Footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    max-width: 1295px;
+    margin: 19em auto 5em;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2em;
+    column-gap: 1.5em;
+}
+
+footer ul {
+    padding-top: .3em
+}
+
+footer li {
+    padding-top: 1em;
+}
+
+.footer__contacts {
+    font-size: 11px;
+    color: rgba(0, 0, 0, .5);
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+.footer__contacts button {
+    background-color: rgba(0, 134, 138, 1);
+    color: white;
+    cursor: pointer;
+    margin: 2em 0em;
+}
+
+.footer__contacts span {
+    font-family: Gilroy-Bold;
+    color: black;
+    font-size: 21px;
+    text-transform: none;
+}
+
+.footer__contacts p:first-child {
+    padding-bottom: 2em;
+}
+
+/* || Last line */
+
+.last-line {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 1fr 1fr 1fr 1fr;
+    max-width: 1295px;
+    margin: 0 auto;
+    font-family: Gilroy-Regular;
+    font-size: 12px;
+    line-height: 1.5;
+    border: 1px solid rgba(196, 196, 196, .5);
+}
+
+.last-line li {
+    display: flex;
+    border-right: 1px solid rgba(196, 196, 196, .5);
+    justify-content: center;
+    align-items: center;
+}
+
+.last-line button {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 134, 138, 1);
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 1em;
+}
+
+.last-line button img {
+    margin-right: 10px;
+}
+
+.last-line li:nth-child(1) {
+    padding: 2em;
+}
+
+.last-line li:nth-child(2) a {
+    text-decoration: underline;
+    padding: 2em;
+}
+
+.last-line li:first-child {
+    border-right: none;
+}
+
+.last-line li:last-child {
+    border-right: none;
+}
+
+/* Media */ 
+
+
+
+@media screen and (max-width: 1295px) {
+    .description, main, footer  {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .arrows {
+        position: absolute;
+        top: 80%;
+        left: 2em;
+    }
+    .main-menu li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-menu .reservation {
+        padding: 1em 1.8em;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .main-menu ul {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    
+    .description {
+        flex-wrap: wrap;
+    }
+
+    .saloons img {
+        margin-left: 0.3em;
+    }
+
+    .last-line li:nth-child(n+3) {
+        display: none;
+    }
+
+    .last-line {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        border: none;
+    }
+
+    .rectangle {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .offer{
+        position: static;
+    }
+
+    .offers{
+        position: static;
+        max-height: none;
+    }
+
+    .links .footer__column {
+        margin-bottom: 2em;
+    }
+
+    footer {
+        display: block;
+        margin: 0;
+        padding: 2em;
+    }
+
+    footer .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .section:hover {
+        font-size: 100%;
+        color: black;
+        transition: 0.4s;
+    }
+    
+    .section:hover .big-number {
+        color: rgba(0, 134, 138, 1);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .top-line ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .top-line li {
+        padding: 0 .3em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .top-line ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main {
+        display: block;
+        margin-top: 1em;
+    }
+
+    main .numbers {
+        margin-left: 0;
+    }
+
+    .numbers .block {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+
+    button {
+        padding: 15px 25px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .top-line ul {
+        display: block;
+    }
+
+    .top-line li {
+        display: none;
+        height: 60px;
+    }
+
+    .top-line li:nth-child(1) {
+        display: flex;
+    }
+
+    .main-menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-menu li {
+        display: flex;
+        justify-content: center;
+        padding: 2em 0;
+    }
+
+    .main-menu .reservation {
+        padding: 1em 0;
+    }
+
+    .description {
+        display: block;
+        padding: 0 2em
+    }
+
+    .description article {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2em
+    }
+
+    .description article h1 {
+        margin: 0;
+    }
+
+    .description article p {
+        padding: 0;
+        text-align:justify;
+    }
+
+    .details {
+        margin-top: 2em;
+    }
+
+    .arrows {
+        position: absolute;
+        top: .5em;
+        left: .5em;
+    }
+
+    .first-screen__main-categories ul {
+        display: block;
+    }
+
+    .section:hover {
+        font-size: 100%;
+        color: rgba(0, 0, 0, .5);
+    }
+    
+    .section:hover .big-number {
+        color: rgba(0, 0, 0, .5);
+    }
+    
+    .lisence {
+        position: static;
+    }
+
+    main .why {
+        padding: 2em;
+    }
+}
+
+
+
+
+/* || Fonts */
+
+@font-face {
+	font-family: 'Gilroy-Regular';
+	src: url('./fonts/gilroy-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/gilroy-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/gilroy-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/gilroy-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/gilroy-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/gilroy-regular.svg#gilroy-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Gilroy-Medium';
+	src: url('./fonts/gilroy-medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/gilroy-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/gilroy-medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/gilroy-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/gilroy-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/gilroy-medium.svg#gilroy-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('./fonts/gilroy-bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/gilroy-bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
